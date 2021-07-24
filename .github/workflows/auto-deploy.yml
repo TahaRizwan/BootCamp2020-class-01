@@ -31,5 +31,5 @@ jobs:
         run: npm install --global surge
         
       - name: deploying using surge
-        run: surge ./ taharbootcamp.surge.sh --token "90b18c1e12e910e0db746a7a0bc5039b"
+        run: surge ./ taharbootcamp.surge.sh --token $ {{ secrets.SURGE_TOKEN }}
           
