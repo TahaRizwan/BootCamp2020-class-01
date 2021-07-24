@@ -31,5 +31,5 @@ jobs:
         run: npm install --global surge
         
       - name: deploying using surge
-        run: surge C:\Users\tahar\OneDrive\Documents\GitHub\BootCamp_2020_sample taharbootcamp.surge.sh --token $ {{secrets.SURGE_TOKEN}}
+        run: surge ./ taharbootcamp.surge.sh --token $ {{secrets.SURGE_TOKEN}}
           
